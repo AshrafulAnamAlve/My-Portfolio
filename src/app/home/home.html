@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ashraful Alve — Portfolio (Dark Demo)</title>
+
+    <!-- Bootstrap (only icons used) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <div class="logo">AA</div>
+                <div>
+                    <h1>Ashraful Anam Alve</h1>
+                    <p>Web Developer • C# • Asp.net Core Web Api • Java • Angular • MySQL</p>
+                </div>
+            </div>
+
+            <nav>
+                <a (click)="scrollToContact('about')" style="cursor: pointer;">About</a>
+                <a (click)="scrollToContact('projects')" style="cursor: pointer;">Projects</a>
+                <a (click)="scrollToContact('skills')" style="cursor: pointer;">Skills</a>
+                <a (click)="scrollToContact('contact')" style="cursor: pointer;">Contact</a>
+                <button class="btn-ct" (click)="scrollToContact('contact')"><i class="bi bi-envelope"></i> Hire
+                    me</button>
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-left">
+                <h2>Hi, I'm <span style="color:#00bcd4">Ashraful</span></h2>
+                <p>
+                    I am a <strong>full-stack web developer</strong> skilled in <strong style="color: #00bcd4;">Angular,
+                        ASP.NET Core,Web Api, Java, and
+                        MySQL</strong>,
+                    building clean, high-performance web apps with secure backends and scalable solutions.
+                </p>
+
+
+                <div class="stats">
+                    <div class="stat">
+                        <div class="num">10+</div>
+                        <div class="label">Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">6 Month</div>
+                        <div class="label">Professional Training</div>
+                    </div>
+                    <div class="stat">
+                        <div class="num">100%</div>
+                        <div class="label">Projects Completed</div>
+                    </div>
+                </div>
+
+                <div class="socials" style="margin-top:16px">
+                    <a class="icon-circle" href="https://github.com/AshrafulAnamAlve" title="GitHub"><i
+                            class="bi bi-github"></i></a>
+                    <a class="icon-circle" href="https://www.linkedin.com/in/asraful-anam-alve/" title="LinkedIn"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a class="icon-circle" href="#" title="Portfolio"><i class="bi bi-globe"></i></a>
+                </div>
+
+                <div>
+                    <button class="btn-ct" style="background:#111;" (click)="downloadCV()"><i
+                            class="bi bi-file-earmark-arrow-down"></i>Download
+                        CV</button>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div
+                    style="background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.04));padding:18px;border-radius:12px;">
+                   <div class="profile-image">
+  <img src="assets/Image/Image1.jpg" alt="profile">
+</div>
+
+                    <div style="display:flex;justify-content:space-between;align-items:center">
+                        <div>
+                            <div style="font-weight:700">Currently Available for Work</div>
+                            <div class="muted">Open to full-time, part-time, and freelance projects</div>
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <button class="btn-ct" (click)="scrollToContact('contact')">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h3>About Me</h3>
+            <div class="card" style="display:flex;gap:16px;align-items:flex-start;color:#e6eef3;">
+                <div style="flex:1">
+                    <p class="muted">
+                        I'm a passionate Software Developer with a strong background in Computer Science and
+                        Engineering.
+                        I specialize in building full-stack web applications using Angular, ASP.NET Core, Web API, Java,
+                        and SQL.
+                        With hands-on experience in both frontend and backend development, I focus on creating secure,
+                        high-performance, and user-friendly systems.
+                        I enjoy designing clean interfaces, writing maintainable code, and continuously learning new
+                        technologies
+                        to improve my craft and deliver efficient digital solutions.
+                    </p>
+                    <ul class="skills-list" style="margin-top:8px;color:var(--muted)">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <li>OOP</li>
+                                <li>Java</li>
+                                <li>C#</li>
+                                <li>Angular</li>
+                                <li>ASP.NET Core</li>
+                                <li>Web API</li>
+                                <li>MVC</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>Bootstrap</li>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                                <li>SQL Server</li>
+                                <li>MySQL</li>
+                                <li>Git & GitHub</li>
+                                <li>SMTP Email Service</li>
+                                <li>JWT Token Authentication</li>
+                            </div>
+                        </div>
+
+
+                    </ul>
+                </div>
+                <div style="width:220px">
+                    <div class="card" style="background:transparent;padding:14px; width: 260px; color:#e6eef3;">
+                        <div style="font-weight:700">Contact</div>
+                        <div class="muted" style="margin-top:6px">Mirpur 2,Dhaka asrafulanamalve45@gmail.com</div>
+                        <div style="margin-top:10px">
+                            <button class="btn-ct" (click)="scrollToContact('contact')"><i class="bi bi-envelope"></i>
+                                Message </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h3>Selected Projects</h3>
+            <div class="grid" id="projectsGrid">
+
+                <a href="https://github.com/AshrafulAnamAlve/eLibrary" target="_blank"
+                    style="text-decoration:none; color:inherit;">
+                    <div class="card" style="height: 360px;">
+                        <img src="assets/Image/ChatGPT Image Nov 10, 2025, 10_17_15 PM.png"
+                            alt="Library with lights on" />
+                        <h4>eLibrary</h4>
+                        <p>Full-stack Library Management web app with ASP.NET Core Web API, Angular, and SQL.</p>
+                        <div class="tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Web Api</span>
+                            <span class="tag">Angular</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank" style="text-decoration:none; color:inherit; ">
+                    <div class="card" style="height: 360px;">
+                        <img src="assets/Image/leave.avif"
+                            alt="proj" />
+                        <h4>Employee Leave System</h4>
+                        <p>Angular frontend + Spring Boot backend. Auth, roles, leave workflow.</p>
+                        <div class="tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Spring</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/AshrafulAnamAlve/Lost-And-Found" target="_blank"
+                    style="text-decoration:none; color:inherit;">
+                    <div class="card" style="height: 360px;">
+                        <img src="assets/Image/lostandfound.jpg" alt="Lost and Found System" />
+                        <h4>Lost and Found System</h4>
+                        <p>Desktop application for lost and found management, built with Java Swing, MySQL, and
+                            NetBeans. Includes PDF export using iText.</p>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Swing GUI</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">iText/PDF</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+
+
+        <section id="skills" #skills class="section">
+            <h3>Skills</h3>
+            <div class="skills">
+
+                <div class="skill">
+                    <div style="font-weight:700">Angular</div>
+                    <div class="muted">SPA development, forms, routing, services</div>
+                    <div class="bar"><i data-width="75"></i></div>
+                </div>
+
+                <div class="skill">
+                    <div style="font-weight:700">ASP.NET Core / Web API</div>
+                    <div class="muted">RESTful APIs, JWT auth, enterprise backend</div>
+                    <div class="bar"><i data-width="70"></i></div>
+                </div>
+
+                <div class="skill">
+                    <div style="font-weight:700">C# / Java OOP</div>
+                    <div class="muted">Strong OOP, backend logic, business workflow</div>
+                    <div class="bar"><i data-width="75"></i></div>
+                </div>
+
+                <div class="skill">
+                    <div style="font-weight:700">Databases (SQL / MySQL)</div>
+                    <div class="muted">Schema design, data integrity, queries</div>
+                    <div class="bar"><i data-width="70"></i></div>
+                </div>
+
+                <div class="skill">
+                    <div style="font-weight:700">HTML / CSS</div>
+                    <div class="muted">Responsive layouts, modern web standards</div>
+                    <div class="bar"><i data-width="65"></i></div>
+                </div>
+
+                <div class="skill">
+                    <div style="font-weight:700">JavaScript / TypeScript</div>
+                    <div class="muted">Responsive layouts, modern web standards</div>
+                    <div class="bar"><i data-width="70"></i></div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="feedbacks">
+            <div class="wrap">
+                <h3 class="section-title">What People Say</h3>
+
+                <div class="feedback-slider-wrap">
+                    <button class="slider-arrow left" (click)="scrollSlider(-1)">
+                        &#8592;
+                    </button>
+
+                    <div class="feedback-slider" #feedbackSlider>
+                        @for (item of feedback; let i = $index; track item) {
+                        <div class="feedback-card">
+                            <div class="fb-pic">
+                                <img [src]="'https://randomuser.me/api/portraits/men/' + i + '.jpg'"
+                                    alt="Profile Photo" />
+                            </div>
+                            <h2 class="fb-title">{{ item.title }}</h2>
+                            <p class="fb-message">"{{ item.message }}"</p>
+                            <div class="fb-author">— {{ item.name }}</div>
+                        </div>
+                        }
+
+                    </div>
+
+                    <button class="slider-arrow right" (click)="scrollSlider(1)">
+                        &#8594;
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+         <div class="custom-toast" [class.show]="showToast">
+        I am workin on this
+        </div>
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h3>Contact</h3>
+            <div class="card contact">
+                <form  action="">
+                    <div>
+                        <div style="margin-bottom:10px">
+                            <input class="input"  placeholder="Your name" id="name">
+                        </div>
+                        <div style="margin-bottom:10px">
+                            <input class="input" placeholder="Your Email" id="email">
+                        </div>
+                        <div style="margin-bottom:10px">
+                            <input class="input"  placeholder="Subject" id="subject">
+                        </div>
+                        <div>
+                            <textarea  placeholder="Message" id="message"></textarea>
+                        </div>
+                        <div style="margin-top:12px;display:flex;gap:8px">
+                            <button (click)="onEmail()" type="button" class="btn-ct">Send Email</button>
+                            <button class="btn-ct" style="background:#111;color:#fff" (click)="downloadCV()">Download
+                                CV</button>
+                        </div>
+                    </div>
+                </form>
+
+
+                <div
+                    style="background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.04));padding:14px;border-radius:10px">
+                    <div style="font-weight:700">Contact Info</div>
+                    <div class="muted" style="margin-top:8px">Mirpur 2, Dhaka</div>
+                    <div class="muted" style="margin-top:6px">asrafulanamalve45@gmail.com</div>
+                    <div style="margin-top:20px">
+                        <div style="font-weight:700;margin-bottom:6px">Online</div>
+                        <div class="socials">
+                            <a class="icon-circle" href="https://github.com/AshrafulAnamAlve" title="GitHub"><i
+                                    class="bi bi-github"></i></a>
+                            <a class="icon-circle" href="https://www.linkedin.com/in/asraful-anam-alve/"
+                                title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a class="icon-circle" href="#" title="Portfolio"><i class="bi bi-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>© <span id="year"></span> Ashraful Anam Alve · All rights reserved | 2025</footer>
+    </div>
+
+    <script>
+        // small helpers
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+
+
+    </script>
+
+</body>
+
+</html>

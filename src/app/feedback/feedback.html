@@ -1,0 +1,34 @@
+<!-- Feedback Section -->
+<section id="feedback">
+    <div class="wrap">
+        <h3 class="section-title">Send Your Feedback</h3>
+        <div class="feedback-banner">
+            "Your thoughts and suggestions matter — help me build better experiences."
+        </div>
+        <div class="feedback-card">
+            <form [formGroup]="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" formControlName="Name" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="Title" name="Title" formControlName="Title" placeholder="Feedback Title">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" formControlName="message"
+                        placeholder="Write your feedback"></textarea>
+                </div>
+
+                <button type="button" class="btn-ct" (click)="onSubmit()">Send Feedback</button>
+                
+            </form>
+        </div>
+    </div>
+</section>
+<div class="custom-toast" [class.show]="showToast">
+    Thanks for your feedback! It really means a lot.
+</div>

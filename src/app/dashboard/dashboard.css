@@ -1,0 +1,33 @@
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.title .subtitle {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  color: gray;
+}
+.custom-toast {
+  visibility: hidden;
+  min-width: 220px;
+  background-color: #000000;
+  color: #00bcd4;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 20px;
+  position: fixed;
+  top: 80px;
+    left: 40%; 
+  z-index: 1000;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(41, 41, 41, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.custom-toast.show {
+  visibility: visible;
+  opacity: 1;
+}

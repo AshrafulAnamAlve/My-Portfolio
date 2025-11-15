@@ -1,0 +1,108 @@
+/* Feedback Section */
+#feedback {
+  padding: 120px 50px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #050506 0%, #0b0b0d 100%);
+}
+
+.section-title {
+  color: #00bcd4;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.feedback-banner {
+
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #00bcd4;
+  background: rgba(30,30,30,0.6);
+  padding: 12px;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: background 0.3s ease;
+}
+
+.feedback-banner:hover {
+  background: rgba(0,188,212,0.2);
+  color: #00bcd4;
+  transform: translateY(-2px);
+}
+
+.feedback-card {
+  background: rgba(30, 30, 30, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 10px #00bcd4;
+  outline: none;
+}
+
+.btn-ct {
+  background: #00bcd4;
+  border: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-ct:hover {
+  background: #0097a7;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #00bcd4;
+}
+.custom-toast {
+  visibility: hidden;
+  min-width: 220px;
+  background-color: #000000; /* green */
+  color: #00bcd4;
+  text-align: center;
+  border-radius: 8px;
+  padding: 12px 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.custom-toast.show {
+  visibility: visible;
+  opacity: 1;
+}
